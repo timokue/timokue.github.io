@@ -3,118 +3,11 @@
   <head>
     <meta charset='UTF-8'/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dummy</title>
-   <!-- <link rel='stylesheet' href='styles.css'/> -->
+    <title>Portfolio</title>
+   <link rel='stylesheet' href='styles.css'/> 
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <style type="text/css">
-        *
-        {
-            margin: 0;
-            padding: 0;
-            font-family: arial;
-            box-sizing: border-box;
-            text-decoration: none;
-            text-transform: capitalize;
-            list-style: none;
-        }
-        body {
-            width: 100%;
-            height: 100vh;
-            background: linear-gradient(to right, rgba(0,0,0,.8),rgba(0,0,0,.8)),url(images/background.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        nav 
-        {
-            background: linear-gradient(to right, #eb3349,#f45c43);
-            color: #fff;
-            padding: 16px 4%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: relative;
-        }
-
-        .navbar
-        {
-            display: flex;
-        }
-
-        .navbar a
-        {
-           color: #fff;
-           margin: 0 20px;
-        }
-        .navbar a.active
-        {
-           background: #fff;
-           padding: 6px 15px;
-           color: #f45c43;
-        }
-        .social-btn i
-        {
-            margin: 0 10px;
-            cursor: pointer;
-            font-size: 20px;
-        }
-        #menu-btn
-        {
-            display: none;
-        }
-
-        /* media query code */
-        @media (max-width: 800px)
-        {
-            html 
-            {
-                font-size: 90%;
-            }
-            .navbar
-            {
-                position: fixed;
-                top: -100%;
-                left: 0;
-                min-height: 100vh;
-                width: 100%;
-                background: linear-gradient(to right,#eb3349,#f45c43);
-                display: block;
-                text-align: center;
-                padding-top: 25%;
-                font-size: 30px;
-                border-bottom-right-radius: 30%;
-                transition: .3s;  /* https://creativenetworks.in/responsive-navbar-design-using-html-css/ */
-            }
-            .navbar li
-            {
-                padding: 20px 0;
-            }
-            #menu-btn
-            {
-                display: block;
-                position: relative;
-                right: 4%;
-                top: 4%;
-                z-index: 999;
-                font-size: 30px;
-                color: #fff;
-                cursor: pointer;
-                user-select: none;
-            }
-            #logo
-            {
-                position: relative;
-                z-index: 999;
-            }
-            .mobile-menu
-            {
-                top: 0;
-            }
-
-        }
-    </style>
   </head>
 
   <body>
@@ -141,7 +34,7 @@
 
    </nav>
 
-   <!-- JavaScript start -->
+   <!-- JavaScript Start -->
    <script type="text/javascript">
       const menu = document.querySelector('#menu-btn');
       const nav = document.querySelector('.navbar');
@@ -150,10 +43,25 @@
         nav.classList.toggle('mobile-menu');
         menu.classList.toggle('bx-x');
       }
-   </script>
+   </script> 
+   <!--JavaScript End -->
 
-   <div>
-     <h1>Hi!</h1>
+   <div class="main-container">
+    <div class="inner-container">
+      <div class="title">
+         <h1>Hi!</h1>
+      </div>
+      <div class="main-text-container">
+         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+      </div>
+    </div>
+
+     <div>
+        <img class="profile-image" src="images/profile-picture.jpg" id="profilePicture">
+     </div>
+    
    </div>
    
   </body>

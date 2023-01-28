@@ -1,0 +1,149 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    list-style: none;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, rgba(0,0,0,.8),rgba(0,0,0,.8)),url(images/background.png);
+    background-color: rgb(0, 0, 26);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav 
+{
+    background: linear-gradient(to right, #eb3349,#f45c43);
+    color: #fff;
+    padding: 16px 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.navbar
+{
+    display: flex;
+}
+
+.navbar a
+{
+   color: #fff;
+   margin: 0 20px;
+}
+.navbar a.active
+{
+   background: #fff;
+   padding: 6px 15px;
+   color: #f45c43;
+}
+.social-btn i
+{
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+#menu-btn
+{
+    display: none;
+}
+
+/* media query code */
+@media (max-width: 800px)
+{
+    html 
+    {
+        font-size: 90%;
+    }
+    .navbar
+    {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        min-height: 100vh;
+        width: 100%;
+        background: linear-gradient(to right,#eb3349,#f45c43);
+        display: block;
+        text-align: center;
+        padding-top: 25%;
+        font-size: 30px;
+        border-bottom-right-radius: 30%;
+        transition: .3s;  /* https://creativenetworks.in/responsive-navbar-design-using-html-css/ */
+    }
+    .navbar li
+    {
+        padding: 20px 0;
+    }
+    #menu-btn
+    {
+        display: block;
+        position: relative;
+        right: 4%;
+        top: 4%;
+        z-index: 999;
+        font-size: 30px;
+        color: #fff;
+        cursor: pointer;
+        user-select: none;
+    }
+    #logo
+    {
+        position: relative;
+        z-index: 999;
+    }
+    .mobile-menu
+    {
+        top: 0;
+    }
+
+}
+
+
+.main-container
+{
+    color: #fff;
+    padding: 50px 4%;
+    margin-top: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.253);
+    border-radius: 30px;
+}
+
+.inner-container
+{
+   max-width: 30%;
+}
+
+.title
+{
+
+}
+
+.main-text-container
+{
+    margin-top: 25px;
+    text-align: justify;
+}
+
+.profile-image
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  max-width: 600px;
+  border-radius: 30px;
+  margin-top: 100px ;
+}
+

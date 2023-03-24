@@ -2,32 +2,149 @@
 <html lang='en'>
   <head>
     <meta charset='UTF-8'/>
-    <title>Portfolio!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+   <link rel='stylesheet' href='styles.css'/> 
+   <link rel='stylesheet' href='projectCard.css'/> 
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
   </head>
+
   <body>
-    <h1>Portfolio</h1>
-    <p><em>Das</em> ist ein <strong>Portfolio</strong>!</p>
+   <!---nav start-->
+   <nav>
+    <img src="images/logo.png" id="logo">
 
-    <h2>Second Heading</h2>
-    <p>second Paragraph</p>
-
-    <ul>
-        <li>Point One</li>
-        <li>Point Two</li>
-        <li>Point 3</li>
-        <li>Point 4</li>
+    <ul class="navbar">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
     </ul>
 
-    <ol>
-        <li>Point One</li>
-        <li>Point Two</li>
-        <li>Point 3</li>
-        <li>Point 4</li>
-    </ol>
-    
-    <p>Line break, </br> here </p>
+    <div class="social-btn">
+      <a href="https://github.com/timokue"><i class='bx bxl-github' ></i></a>
+    </div>
 
-    <hr/>
+    <i class='bx bx-menu-alt-left' id="menu-btn"></i>
+
+   </nav>
+
+   <!-- JavaScript Start -->
+   <script type="text/javascript">
+      const menu = document.querySelector('#menu-btn');
+      const nav = document.querySelector('.navbar');
+
+      menu.onclick = () => {
+        nav.classList.toggle('mobile-menu');
+        menu.classList.toggle('bx-x');
+        document.body.classList.toggle('no-scroll');
+      }
+   </script> 
+   <!--JavaScript End -->
+
+   <div class="main-container">
+   <div class="intro-container">
+      <div class="title">
+         <h1>Hi</h1>
+      </div>
+      <div class="main-text-container">
+         <p>,my name is Timo and I am currently studying Code & Context at TH Köln. 
+          I have a great passion for programming and am particularly interested in mobile app development. I have experience working with ReactNative, Node.js, JavaScript, and Java, and I enjoy exploring new technologies to further improve my skills.
+          In addition to programming, I am also interested in robotics and microcontrollers. 
+          I find the concept of creating intelligent machines that can perform various tasks fascinating and hope to incorporate these interests into my future work.
+          Thank you for taking the time to visit my portfolio. 
+          Please feel free to contact me if you have any questions.</p>
+      </div>
+    </div>
+
+     <!-- <div>
+        <img class="profile-image" src="images/profile-picture.jpg" id="profilePicture">
+     </div> -->
     
+   </div>
+
+   <div class="project-container">
+    <div class="inner-project-container">
+    <div class="project-header">
+      <h1>My Projects</h1>
+    </div>
+    <div class="gallery">
+
+
+
+
+      <div class="cards">
+   
+        <div class="gallery__item gallery__item--1 card">
+            <a href="projects.html#project1">
+            <img src="images/project1/pe1.png" class="gallery__img" alt="Image 1">
+            <figcaption>Robotics</figcaption>
+            </a>
+        </div>
+      
+
+        <figure class="gallery__item gallery__item--2 card">
+            <a href="projects.html#project2">
+            <img src="images/project2/ai1.png" class="gallery__img" alt="Image 2">
+            <figcaption>AI</figcaption>
+            </a>
+        </figure>
+
+      
+        <figure class="gallery__item gallery__item--3 card">
+          <a href="projects.html#project3">
+           <img src="images/project3/gg2.png" class="gallery__img" alt="Image 3">
+           <figcaption>Generative Art</figcaption>
+          </a>
+        </figure>
+
+        <figure class="gallery__item gallery__item--4 card">
+            <img src="images/project4/projectPlaceholder.png" class="gallery__img" alt="Image 4">
+            <figcaption>Coming soon...</figcaption>
+        </figure>
+
+        <figure class="gallery__item gallery__item--5 card">
+
+            <img src="images/project5/projectPlaceholder2.png" class="gallery__img" alt="Image 5">
+            <figcaption>Coming soon...</figcaption>
+        </figure>
+
+        <figure class="gallery__item gallery__item--6 card">
+
+            <img src="images/project6/projectPlaceholder3.png" class="gallery__img" alt="Image 6">
+            <figcaption>Coming soon...</figcaption>
+        </figure>
+      </div>
+ 
+
+
+    </div>
+    </div>
+   </div>
+
+
+   <div class="container">
+    <form action="https://formspree.io/f/mdovlwpv" method="POST">
+  
+      <label for="fname" class="label-text">Vorname</label>
+      <input type="text" id="fname" name="firstName" placeholder="Vorname..">
+  
+      <label for="lname" class="label-text">Nachname</label>
+      <input type="text" id="lname" name="lastName" placeholder="Nachname..">
+  
+      <label for="subject" class="label-text">Mitteilung</label>
+      <textarea id="message" name="message" placeholder="Text..." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+  
+    </form>
+   </div>
+
+   <div class="footer">
+
+   </div>
+   
   </body>
+
 </html>

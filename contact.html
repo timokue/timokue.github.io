@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+   <link rel='stylesheet' href='styles.css'/> 
+   <link rel='stylesheet' href='projectCard.css'/> 
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  </head>
+
+  <body>
+   <!---nav start-->
+   <nav>
+    <img src="images/logo.png" id="logo">
+
+    <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="#" class="active">Contact</a></li>
+    </ul>
+
+    <div class="social-btn">
+      <a href="https://github.com/timokue"><i class='bx bxl-github' ></i></a>
+    </div>
+
+    <i class='bx bx-menu-alt-left' id="menu-btn"></i>
+
+   </nav>
+
+   <!-- JavaScript Start -->
+   <script type="text/javascript">
+      const menu = document.querySelector('#menu-btn');
+      const nav = document.querySelector('.navbar');
+
+      menu.onclick = () => {
+        nav.classList.toggle('mobile-menu');
+        menu.classList.toggle('bx-x');
+        document.body.classList.toggle('no-scroll');
+      }
+   </script> 
+   <!--JavaScript End -->
+
+   <div class="container">
+    <form action="https://formspree.io/f/mdovlwpv" method="POST">
+  
+      <label for="fname" class="label-text">Vorname</label>
+      <input type="text" id="fname" name="firstName" placeholder="Vorname..">
+  
+      <label for="lname" class="label-text">Nachname</label>
+      <input type="text" id="lname" name="lastName" placeholder="Nachname..">
+  
+      <label for="subject" class="label-text">Mitteilung</label>
+      <textarea id="message" name="message" placeholder="Text..." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+  
+    </form>
+   </div>
+
+   <div class="footer">
+
+   </div>
+   
+  </body>
+
+</html>

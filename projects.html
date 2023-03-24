@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+   <link rel='stylesheet' href='styles.css'/>
+   <link rel='stylesheet' href='projects.css'/> 
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  </head>
+
+  <body>
+   <!---nav start-->
+   <nav>
+    <img src="images/logo.png" id="logo">
+
+    <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        
+    </ul>
+
+    <div class="social-btn">
+      <a href="https://github.com/timokue"><i class='bx bxl-github' ></i></a>
+    </div>
+
+    <i class='bx bx-menu-alt-left' id="menu-btn"></i>
+
+   </nav>
+
+   <!-- JavaScript Start -->
+   <script type="text/javascript">
+      const menu = document.querySelector('#menu-btn');
+      const nav = document.querySelector('.navbar');
+
+      menu.onclick = () => {
+        nav.classList.toggle('mobile-menu');
+        menu.classList.toggle('bx-x');
+        document.body.classList.toggle('no-scroll');
+      }
+   </script> 
+   <!--JavaScript End -->
+
+   <div id="project1" class="main-container">
+    <div class="inner-container">
+        <div class="project-title">
+        <h1>Robotics & Microcontroller</h1>
+        </div>
+        <div class="project-text">
+        <p>The Development of a Self-driving, object-avoiding robot with Nvidia Jetson and ultrasonic sensors.
+          This project was about developing a self-driving robot that can explore its environment and avoid obstacles using ultrasonic sensors and a camera controlled by an Nvidia Jetson board. 
+          To achieve this goal, we used ultrasonic sensors and multiple Attiny microcontrollers to detect obstacles and communicate with the Jetson board via the I2C bus. 
+          The Jetson board processed the sensor data and used it to control the robot's movement and steering. </p>
+        </div>
+        <div class="image-container">
+          <img src="./images/project1/pe1.png" class="project-img"/>
+          <img src="./images/project1/pe2.png" class="project-img"/>
+          <img src="./images/project1/pe3.png" class="project-img"/>
+        </div>
+    </div>
+   </div>
+
+   <div id="project2" class="main-container">
+    <div class="inner-container">
+        <div class="project-title">
+        <h1>AI</h1>
+        </div>
+        <div class="project-text">
+        <p>Handwritten Character Recognition with AI.
+          The goal of this project, was to develop an AI system that uses JavaScript and tensors to recognize handwritten numbers and characters and accurately classify them. 
+          The AI model was trained with the MNIST dataset, a large dataset of handwritten digits. The AI model learns to recognize and classify various handwritten digits and 
+          characters by analyzing the patterns and features of each image.
+          The AI model was integrated into a website where users can draw their own handwritten characters and numbers using a mouse or touchpad. 
+          The AI model then analyzes the image and classifies the handwritten character or number. If the AI model misclassifies the user's input, 
+          the user can select the correct character or number, and the AI model learns from this correction to improve its accuracy. </p>
+          <br/><p>Group project by: Timo Küsters, Matthias Zens and <a href="https://bryanhogan.github.io">Bryan Hogan</a> within a course held by Prof. Christian Faubel.</p>
+        </div>
+        <div class="image-container">
+          <img src="./images/project2/ai1.png" class="project-img"/>
+          <img src="./images/project2/ai2.png" class="project-img"/>
+          <img src="./images/project2/ai3.png" class="project-img"/>
+        </div>
+    </div>
+   </div>
+
+   <div id="project3" class="main-container">
+    <div class="inner-container">
+        <div class="project-title">
+        <h1>Generative Art</h1>
+        </div>
+        <div class="project-text">
+        <p>Creating generative artworks with P5.js.
+          The goal of this project was to create generative artworks using code and P5.js, a JavaScript library for creative coding. 
+          The project is an exploration of the possibilities of combining art and code to create unique, visually stunning artworks.
+          Using P5.js, a series of generative artworks were created, experimenting with different techniques and algorithms. 
+          In particular, the influence of randomly generated parameters, provided impressive results. </p>
+        </div>
+        <div class="image-container">
+          <img src="./images/project3/gg1.png" class="project-img"/>
+          <img src="./images/project3/gg2.png" class="project-img"/>
+          <img src="./images/project3/gg3.png" class="project-img"/>
+          <img src="./images/project3/gg4.png" class="project-img"/>
+        </div>
+    </div>
+   </div>
+
+   <div class="footer">
+   </div>
+  </body>
+</html>
